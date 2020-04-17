@@ -1,7 +1,8 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
-export default function SearchBar() {
+export default function SearchBar(props) {
+  console.log("SEARCH: ",props);
 
   return (
     <form noValidate autoComplete="off">

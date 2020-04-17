@@ -7,14 +7,14 @@ import Employees from '../employees.json';
 
 export default function Home() {
   const [search, setSearch] = useState(Employees);
-
+  console.log(search)
 
   return (
     <div>
       <ButtonAppBar/>
       <SimpleContainer>
-        <SearchBar/>
-        <SimpleTable/>
+        <SearchBar data={search}/>
+        <SimpleTable data={search}/>
       </SimpleContainer>
     </div>
   );
