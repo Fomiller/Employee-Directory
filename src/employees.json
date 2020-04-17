@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Saif Mcdaniel ",
+    "role": "Fry Cook",
+    "age": 23,
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "name": "Usamah Mclean",
+    "role": "Restaurant Owner",
+    "age": 36,
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "name": "Etta Beaumont",
+    "role": "Cashier",
+    "age": 21,
+    "gender": "Female"
+  },
+  {
+    "id": 4,
+    "name": "Catherine Frost",
+    "role": "Cashier",
+    "age": 19,
+    "gender": "Female"
+  },
+  {
+    "id": 5,
+    "name": "Shyam Joyner",
+    "role": "Server",
+    "age": 19,
+    "gender": "Male"
+  },
+  {
+    "id": 6,
+    "name": "Caspian Waller",
+    "role": "Server",
+    "age": 25,
+    "gender": "Male"
+  },
+  {
+    "id": 7,
+    "name": "Ibrahim Timms",
+    "role": "Janitor",
+    "age": 48,
+    "gender": "Male"
+  },
+  {
+    "id": 8,
+    "name": "Abigail Mckenna",
+    "role": "Line Cook",
+    "age": 22,
+    "gender": "Female"
+  },
+  {
+    "id": 9,
+    "name": "Latoya Needham",
+    "role": "Manager",
+    "age": 32,
+    "gender": "Female"
+  },
+  {
+    "id": 10,
+    "name": "Millie Stubbs",
+    "role": "Assistant Manager",
+    "age": 28,
+    "gender": "Female"
+  },
+  {
+    "id": 11,
+    "name": "Ammar Suarez",
+    "role": "Busser",
+    "age": 17,
+    "gender": "Male"
+  },
+  {
+    "id": 12,
+    "name": "Ciara Hardy",
+    "role": "Busser",
+    "age": 16,
+    "gender": "Female"
+  }
+]
