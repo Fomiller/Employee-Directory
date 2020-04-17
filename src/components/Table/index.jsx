@@ -12,6 +12,9 @@ import Employees from '../../employees.json';
 
 
 const useStyles = makeStyles({
+  tableCell: {
+    fontWeight: "bold",
+  },
   table: {
     minWidth: 300,
     maxWidth: 1080,
@@ -29,10 +32,10 @@ export default function SimpleTable() {
         <TableHead>
           {/* create a row inside the table header with cells for each column acting as labels */}
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell align="right">Role</TableCell>
-            <TableCell align="right">Age</TableCell>
-            <TableCell align="right">Gender</TableCell>
+            <TableCell className={classes.tableCell} >Name</TableCell>
+            <TableCell className={classes.tableCell} align="right">Role</TableCell>
+            <TableCell className={classes.tableCell} align="right">Age</TableCell>
+            <TableCell className={classes.tableCell} align="right">Gender</TableCell>
           </TableRow>
         </TableHead>
         {/* create a body for the table data */}
