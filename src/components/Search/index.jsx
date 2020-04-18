@@ -2,13 +2,13 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
 export default function SearchBar(props) {
-  console.log("SEARCH: ",props);
-
   return (
-    <form noValidate autoComplete="off">
+    <form noValidate autoComplete="off" onSubmit={props.handleFormSubmit}>
       <TextField
-          id="standard-full-width"
+          id="searchField"
           placeholder="Search Employees"
+          value={props.search}
+          onChange={props.handleChange} 
           fullWidth
           margin="normal"
           InputLabelProps={{
