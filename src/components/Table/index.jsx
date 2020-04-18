@@ -7,8 +7,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-// Local
-import Employees from '../../employees.json';
 
 
 const useStyles = makeStyles({
@@ -42,7 +40,7 @@ export default function SimpleTable(props) {
         {/* create a body for the table data */}
         <TableBody>
           {/* for each row in the data create a row using a row component and then creating a cell for each property of the data */}
-          {Employees.map((employee) => (
+          {props.employees.map((employee) => (
             <TableRow key={employee.name}>
               <TableCell component="th" scope="row">
                 {employee.name}
