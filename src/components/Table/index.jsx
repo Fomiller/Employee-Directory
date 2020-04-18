@@ -21,7 +21,6 @@ const useStyles = makeStyles({
 
 export default function SimpleTable(props) {
   const classes = useStyles();
-  console.log("Table: ",props);
   return (
     // create table container 
     <TableContainer className={classes.table} component={Paper}>

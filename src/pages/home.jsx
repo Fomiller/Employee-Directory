@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
-import Button from '@material-ui/core/Button';
+import React from 'react';
 import SimpleTable from '../components/Table';
 import SimpleContainer from '../components/Container';
 import ButtonAppBar from '../components/Navbar';
 import SearchBar from '../components/Search';
 import Employees from '../employees.json';
+import CenteredGrid from '../components/Grid';
 
 class Home extends React.Component {
   state = {
-    employees: Employees
+    employees: Employees,
+    search:"",
   };
 
   sortByName = () => {
@@ -37,14 +38,30 @@ class Home extends React.Component {
     this.setState(sortByRole);
   };
   
+  resetEmployees = () => {
+    this.setState({employees: Employees});
+    this.setState({search:""})
+  }
+
+  handleChange = (event) => {
+    this.setState({search: event.target.value});
+    const employeeSearch = this.state.employees.filter(employee => employee.name.includes(this.state.search)|| employee.role.includes(this.state.search) )
+    this.setState({employees: employeeSearch})
+    // resets employee table if user clears out search with backspace. 
+    if (event.target.value === '') {
+      this.setState({employees: Employees})
+    }
+  }
+
+
+
   render() {
     return (
       <div>
         <ButtonAppBar/>
         <SimpleContainer>
-          <SearchBar/>
-          <Button variant="contained" color="primary" onClick={this.sortByName}>Sort By alphabetically Name</Button>
-          <Button variant="contained" color="primary" onClick={this.sortByRole}>Sort By alphabetically Role</Button>
+          <SearchBar handleChange={this.handleChange} search={this.state.search}/>
+          <CenteredGrid sortByName={this.sortByName} sortByRole={this.sortByRole} resetEmployees={this.resetEmployees}/>
           <SimpleTable employees={this.state.employees}/>
         </SimpleContainer>
       </div>
