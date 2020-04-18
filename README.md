@@ -1,4 +1,3 @@
-
 # Employee Directory
 ![Commits](https://img.shields.io/github/last-commit/Fomiller/Employee-Directory)  
 ## Languages
