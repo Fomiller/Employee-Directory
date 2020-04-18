@@ -20,14 +20,16 @@ export default function CenteredGrid(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid justify="center"  item xs={6}>
-          <Button variant="contained" color="primary" onClick={props.sortByName}>Sort By Name alphabetically</Button>
+        <Grid item xs={6}>
+          <Button variant="contained" color="primary" onClick={props.sortByName} fullWidth>Sort By Name alphabetically</Button>
         </Grid>
-        <Grid justify="center"  item xs={6}>
-          <Button variant="contained" color="primary" onClick={props.sortByRole}>Sort By Role alphabetically</Button>
+        <Grid item xs={6}>
+          <Button variant="contained" color="primary" onClick={props.sortByRole} fullWidth>Sort By Role alphabetically</Button>
         </Grid>
-        <Grid justify="center"  item xs={12}>
-          <Button variant="contained" color="primary" onClick={props.resetEmployees}>Reset Employees</Button>
+      </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Button variant="contained" color="primary" onClick={props.resetEmployees} fullWidth>Reset Employees</Button>
         </Grid>
       </Grid>
     </div>
